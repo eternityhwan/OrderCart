@@ -1,0 +1,24 @@
+spring:
+  datasource:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://springbood-db.clvwtbd3pi7c.ap-northeast-2.rds.amazonaws.com:3306/hwanshop?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+  username: admin
+  password: 12345678
+#  datasource:
+#    url: jdbc:h2:tcp://localhost/~/OrderJangbaguni;
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate:
+  # show_sql: true
+        format_sql: true
+#logging:
+#  level:
+#  org.hibernate.SQL: debug
+##  org.hibernate.type: trace
+# org.hibernate.type: trace
